@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  trainmlflow-and-evaluate:
+  train-and-evaluate:
     runs-on: ubuntu-latest
 
     steps:
