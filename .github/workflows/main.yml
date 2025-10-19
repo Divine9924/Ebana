@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  trainmlflow-and-evaluate:
+  train-and-evaluate:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,7 +28,7 @@ jobs:
         run: |
           python src/load_data.py
           python src/preprocess.py
-          python src/trainmlflow.py
+          python src/train.py
           python src/evaluate.py
 
       - name: Upload MLflow results
