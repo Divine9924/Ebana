@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  train-and-evaluate:
+  train-and-eveluate:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,7 +29,7 @@ jobs:
           python src/load_data.py
           python src/preprocess.py
           python src/train.py
-          python src/evaluate.py
+          python src/eveluate.py
 
       - name: Upload MLflow results
         uses: actions/upload-artifact@v4
